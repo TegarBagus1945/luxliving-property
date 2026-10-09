@@ -3,6 +3,13 @@ import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+// Fungsi agar Next.js tahu ID properti mana saja yang harus di-prerender saat build
+export async function generateStaticParams() {
+  return DUMMY_PROPERTIES.map((property) => ({
+    id: property.id,
+  }));
+}
+
 interface PageProps {
   params: Promise<{ id: string }>;
 }
