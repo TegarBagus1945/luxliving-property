@@ -10,7 +10,7 @@ export default function Footer() {
             LuxLiving.
           </span>
           <p className="text-xs text-slate-500 mt-1">
-            © {new Date().getFullYear()} LuxLiving Property Marketplace. All rights reserved.
+            © 2026 LuxLiving Property Marketplace. All rights reserved.
           </p>
         </div>
 
